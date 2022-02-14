@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Survey Form</title>
+	<link rel="stylesheet" href="styles.css">
+  <script src="index.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="identity">
+        <img src="logo.png" alt="Logo">
+    </div>
+    <div class="heading">
+        <h1>Survey Form</h1>
+    </div>
+</header>
+
+<div class="wrapper">
+    <div class="title">
+      Fill The Following Details
+    </div>
+    <div class="form">
+      <form method="post" action="https://www.daraz.pk/">
+
+       <div class="inputfield">
+          <label>Policy Number : </label>
+          <input type="number" class="input" onfocus="this.placeholder=''" placeholder="Enter the policy Number" required>
+       </div>  
+      <div class="inputfield">
+          <label>Surveyor Name : </label>
+          <input type="text" class="input" onfocus="this.placeholder=''" placeholder="Enter the Surveyor Name" required>
+       </div> 
+       
+       <div class="inputfield">
+        <label>Surveyor ID : </label>
+        <input type="number" class="input" onfocus="this.placeholder=''" placeholder="Enter the Surveyor ID" required>
+     </div> 
+
+     <div class="inputfield">
+      <label>Survey Place :</label>
+      <input type="text" class="input" onfocus="this.placeholder=''" placeholder="Enter the Survey Place" required>
+   </div> 
+      <div class="inputfield">
+        <label>Date Of Loss : </label>
+        <input type="datetime-local" class="input" required>
+     </div> 
+     <div class="inputfield">
+      <label>Inspection Date : </label>
+      <input type="datetime-local" class="input" required>
+   </div> 
+
+      <hr>
+      <br>
+      <div class="title">
+       Car Inspection Pictures
+      </div>
+      <hr>
+      <br> 
+    <div class="inputfield">
+      <label>Survey Pictures : </label>
+      <input id="fileupload" class="btn" type="file" accept="image" multiple="multiple" required/>
+   </div> 
+   <div class="inputfield">
+   <label>Preview : </label>
+   <div id="dvPreview"> 
+
+   </div>
+  </div>
+
+
+      <div class="inputfield">
+        <input type="reset" value="Reset" class="btn" id="reset">
+        <input type="submit" value="Submit" class="btn">
+      </div>
+    </div>
+</div>	
+</form>
+</body>
+</html>
